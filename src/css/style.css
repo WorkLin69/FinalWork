@@ -1,12 +1,18 @@
-  body {
-      margin: 0;
-      background-color: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    canvas {
-      background-color: #001;
-      border: 2px solid #000;
-    }
+body {
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+canvas {
+  background-color: #001;
+  border: 2px solid #000;
+}
+#gameInfo {
+  color: white;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+}
