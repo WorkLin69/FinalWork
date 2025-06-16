@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Breakout Cross Level</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script>
+    if (!window.AudioContext && !window.webkitAudioContext) {
+      alert("Ваш браузер имеет ограниченную поддержку аудио. Некоторые звуки могут не работать.");
+    }
+  </script>
 </head>
 <body>
   <div id="gameInfo">
@@ -13,10 +18,6 @@
   </div>
   <canvas id="gameCanvas" width="350" height="600"></canvas>
 
-  <script type="module" src="./js/sounds.js"></script>
-  <script type="module" src="./js/menu.js"></script>
-  <script type="module" src="./js/gameManager.js"></script>
-  <script type="module" src="./js/script.js"></script>
-  <script type="module" src="./js/script.js"></script>
+  <script type="module" src="./js/game.js"></script>
 </body>
 </html>
